@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "YCCardOCRKit"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "IDcard recognize"
   spec.description  = <<-DESC
 use for IDcard recognize[RC]
@@ -21,7 +21,7 @@ use for IDcard recognize[RC]
 
   spec.source_files  = "YCCardOCRKit/YCCardOCRKit.framework/Headers/*"
   spec.vendored_frameworks = "YCCardOCRKit/YCCardOCRKit.framework"
-  spec.public_header_files = "YCCardOCRKit/YCCardOCRKit.framework/Headers/IDCardTool.h"
+  # spec.public_header_files = "YCCardOCRKit/YCCardOCRKit.framework/Headers/IDCardTool.h"
 
   spec.resources = "YCCardOCRKit/tessdata"
 
@@ -30,7 +30,7 @@ use for IDcard recognize[RC]
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
 
-  spec.dependency "OpenCV", "~> 3.0.0"
+  spec.dependency "OpenCV", "~> 3.0.0" 
   spec.dependency "TesseractOCRiOS", "~> 4.0.0"
 
 
